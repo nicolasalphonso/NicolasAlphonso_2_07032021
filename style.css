@@ -5,16 +5,16 @@
 /* règles générales */
 body {
   font-family: "Raleway", sans-serif;
-  max-width:1200px;
+  max-width:1440px;
   margin: auto;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
 p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 /* section du header */
@@ -27,12 +27,20 @@ header {
 }
 
 /* navigation */
+nav {
+  width: 30%;
+}
+
 nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: inline-block;
 }
 
 nav li {
   display: inline-block;
+  padding-left: 30px;
 }
 
 nav a {
@@ -80,8 +88,8 @@ form {
 }
 
 form i {
-  padding: 10px;
-  font-size: 0.7em;
+  padding: 20px;
+  font-size: 1em;
   border: 1px solid #f2f2f2;
   border-radius: 8px 0 0 8px;
   background-color: #f2f2f2;
@@ -108,6 +116,7 @@ form i {
 #filtres {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #filtres p {
@@ -501,7 +510,8 @@ footer {
   }
 
   #recherche {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   #bouton_recherche {
@@ -515,5 +525,78 @@ footer {
       content: "\f002";
       padding: 10px;
   }
+
+  #resultats {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+
+  .titre_avec_logo {
+    width: 90%;
+  }
+
+  #populaires {
+    width: 100%;
+    height: auto;
+    margin:0;
+    border-radius: 0 0 0 0;
+  }
+
+  #populaires a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .hebergement_populaire {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height: 140px;
+    border-radius: 15px;
+    align-items: center;
+    padding-left: 3px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27);
+  }
+
+  .div_image_populaire {
+    width: 30%;
+    height: 95%;
+  }
+  
+  .image_populaire {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .description_populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    height: 80%;
+    margin-left: 10px;
+  }
+  
+  .description_populaire h2 {
+    margin: 0px;
+    font-size: 00.8em;
+  }
+  
+  .description_populaire p {
+    margin-top: 3px;
+    font-size: 00.8em;
+  }
+
+
+
+
 
 }
