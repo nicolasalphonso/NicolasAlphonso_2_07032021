@@ -627,5 +627,89 @@ footer {
     font-size: 0.9em;
   }
 
+  .afficher_plus {
+    margin-left: 45px;
+  }
 
+  #activités {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  #activités h1 {
+    margin-left: 45px;
+  }
+
+  #activités_touristiques {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lien_activite_unique {
+    width: 90%;
+    height: 500px;
+    margin-bottom: 30px;
+    
+  }
+
+  .activité_unique {
+    border-radius: 50px;
+  }
+
+  .container_image_activite_unique {
+    height: 70%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .image_activite_unique {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .description_activite_unique {
+    margin-left: 30px;
+    height: 30%;
+  }
+
+  .colonne_deux_activites {
+    width: 90%;
+  }
+
+  .lien_activite_40_colonne,
+  .lien_activite_45_colonne,
+  .lien_activite_50_colonne {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+
+  .colonne_deux_activites img {
+    height: 70%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .lien_activite_40_colonne p,
+  .lien_activite_45_colonne p,
+  .lien_activite_50_colonne p {
+    margin-left: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .colonne_pied_page ul {
+    margin-top: 10px;
+  }
+
+  .colonne_pied_page li {
+    margin-bottom: 40px;
+  }
+
+  
+  
 }
