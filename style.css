@@ -4,10 +4,9 @@
 }
 /* règles générales */
 body {
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   max-width:1200px;
   margin: auto;
-  
 }
 
 h1 {
@@ -25,36 +24,22 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* navigation */
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  width: 100%;
-  align-items: center;
+nav ul {
+  display: inline-block;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav li {
+  display: inline-block;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  border-top: 2px solid transparent;
-  display: inline-block;
+  display: block;
   padding: 30px 10px;
-  text-align: center;
 }
 
 nav a:hover {
@@ -67,32 +52,12 @@ nav a:hover {
   border-top: 2px solid#0065fc;
 }
 
-#liens_principaux {
-  width: 42%;
-  display: flex;
-  flex-direction: row;
-}
-
-.liens_nav_normaux {
-  width: 66%;
-}
-
-.liens_nav_normaux li {
-  width: 50%;
-}
-
-.lien_nav_inscription {
-  width: 34%;
-  margin: 0%;
-  padding: 0%;
-}
-
 .lien_inscription {
   color: #0065fc;
   font-weight: bold;
 }
-
-/*sous-partie de zone de recherche */
+/* main */
+/*zone de recherche */
 #recherche {
   width: 97%;
   margin: auto;
@@ -115,7 +80,7 @@ form {
 }
 
 form i {
-  padding: 1%;
+  padding: 10px;
   font-size: 0.7em;
   border: 1px solid #f2f2f2;
   border-radius: 8px 0 0 8px;
@@ -133,6 +98,10 @@ form i {
   background-color: #0065fc;
   border-style: none;
   border-radius: 0 8px 8px 0;
+}
+
+#bouton_recherche:before {
+  content: "Rechercher";
 }
 
 /* filtres */
@@ -186,7 +155,7 @@ form i {
 }
 
 /* partie principale */
-#partie_principale {
+#resultats {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,8 +166,8 @@ form i {
   margin-top: 20px;
 }
 
-/* section des hébergements */
-#hébergement {
+/* section des hebergements */
+#hebergement {
   display: flex;
   flex-direction: column;
   width: 65%;
@@ -208,12 +177,12 @@ form i {
   height: 100%;
 }
 
-#hébergement h1 {
+#hebergement h1 {
   margin-left: 12px;
   margin-top: 30px;
 }
 
-#hébergement h2 {
+#hebergement h2 {
   font-size: 0.8em;
 }
 
@@ -521,58 +490,30 @@ footer {
   color: black;
 }
 
-/* règles CSS pour les portables */
-@media all and (max-device-width: 480px) {
+/* règles CSS pour les tablettes */
+@media all and (max-width: 780px) {
   body {
     width: 100%;
-    font-size: 3.5em;
   }
 
   header {
-    width: 85%;
-    margin: auto;
+    width: 100%;
   }
 
   #recherche {
-    width: 85%;
-    margin: auto;
-  }
-
-  #recherche h1 {
-    font-size: 1em;
-  }
-
-  #recherche p {
-    font-size: 0.73em;
-  }
-
-
-
-  #location {
-    padding: 3%;
-    font-size: 0.7em;
-    font-weight: bold;
-  }
-
-  #recherche_hebergement {
     width: 100%;
-    display:flex;
-    justify-content: space-around;
-
-  }
-
-  #recherche_hebergement i {
-    width:10%;
-  }
-
-  #location {
-    width: 80%;
   }
 
   #bouton_recherche {
-    width: 10%;
+    border-radius: 8px 8px 8px 8px;
+
   }
 
-
+  #bouton_recherche:before {
+      font-family: "Font Awesome 5 free";
+      font-weight: 900;
+      content: "\f002";
+      padding: 10px;
+  }
 
 }
