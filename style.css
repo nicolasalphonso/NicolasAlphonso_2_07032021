@@ -24,23 +24,40 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+#div_logo {
+  width: 70%;
+  height: 40px;
+  justify-content: flex-start;
 }
 
 /* navigation */
 nav {
-  width: 30%;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  flex-direction: row;
 }
 
 nav ul {
-  width: 100%;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav li {
   display: inline-block;
-  padding-left: 30px;
+  width: auto;
+}
+
+header p {
+  width: 10%;
+  margin-left: 30px;
+  text-align: center;
 }
 
 nav a {
@@ -48,6 +65,7 @@ nav a {
   color: black;
   display: block;
   padding: 30px 10px;
+  border-top: 2px solid transparent;
 }
 
 nav a:hover {
@@ -61,6 +79,7 @@ nav a:hover {
 }
 
 .lien_inscription {
+  text-decoration: none;
   color: #0065fc;
   font-weight: bold;
 }
@@ -85,10 +104,11 @@ form {
   display: flex;
   justify-content: left;
   margin-bottom: 1.3em;
+  height: 40px;
 }
 
 form i {
-  padding: 20px;
+  padding: 12px;
   font-size: 1em;
   border: 1px solid #f2f2f2;
   border-radius: 8px 0 0 8px;
@@ -99,6 +119,8 @@ form i {
   border: 1px solid #f2f2f2;
   border-right: none;
   padding-left: 10px;
+  width: 235px;
+  font-size: 1em;
 }
 
 #bouton_recherche {
@@ -106,6 +128,7 @@ form i {
   background-color: #0065fc;
   border-style: none;
   border-radius: 0 8px 8px 0;
+  padding: 0 20px 0 20px;
 }
 
 #bouton_recherche:before {
@@ -117,6 +140,7 @@ form i {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #filtres p {
@@ -124,29 +148,45 @@ form i {
   font-weight: bold;
 }
 
-#filtres button {
-  display: block;
-  background-color: transparent;
-  border: 2px solid #f2f2f2;
-  border-radius: 30px;
-  border-left: none;
-  margin: 10px;
+#boutons_de_filtres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#filtres a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
   font-weight: bold;
+  border: 2px solid #f2f2f2;
+  border-left: none;
+  border-radius: 30px;
   padding: 0 20px 0 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+
+}
+
+.icone_texte_filtre {
+  display: inline-block;
+}
+
+#boutons_de_filtres i {
+  color: #0065fc;
+  width: 15px;
+  padding: 15px;
+  background-color: #deebff;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .circle-icon {
-  color: #0065fc;
-  background: #deebff;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1;
-  vertical-align: middle;
-  padding: 10px;
-  font-size: 1.3em;
-  margin-right: 8px;
+}
+
+.icon-background {
+  color: #c0ffc0;
 }
 
 #icone_information {
@@ -161,6 +201,16 @@ form i {
   padding: 5px;
   font-size: 0.7em;
   margin-right: 8px;
+}
+
+#informations_complementaires {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#descriptif_info_complementaire {
+  margin: 0;
 }
 
 /* partie principale */
@@ -499,34 +549,121 @@ footer {
   color: black;
 }
 
-/* règles CSS pour les tablettes */
-@media all and (max-device-width: 768px) {
+/* règles CSS pour les smartphones */
+@media screen and (max-width: 480px) {
   body {
     width: 100%;
-    font-size: 2.5em;
-  }
-
-  h1 {
+    font-size: 1em;
   }
 
   header {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+  }
+
+  #div_logo {
+    height: 50px;
+    width: 45%;
+    order: 1;
+    margin: 0 0 2% 5%;
+  }
+
+  #img_logo {
+    height: 100%;
+  }
+
+  header p {
+    order: 2;
+    margin: 0;
+    width: 45%;
+    text-align: right;
+    margin: 0 5% 2% 0;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    width: 100%;
+  }
+
+  nav li {
+    width: 50%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 20px 10px 10px 10px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  .active {
+    border-top: 2px solid transparent;
+    border-bottom: 3px solid #0065fc;
   }
 
   #recherche {
     width: 90%;
     margin: auto;
   }
+  #recherche p {
+    margin: 15px 0 30px 0;
+  }
+
+  #recherche_hebergement {
+    width: auto;
+    height: 50px;
+  }
+
+  #recherche_hebergement i {
+    width: 15%;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+    padding: 0%;
+    padding-top: 15px;
+  }
+
+  #location {
+    width: 75%;
+    padding-left: 15px;
+  }
 
   #bouton_recherche {
-    border-radius: 8px 8px 8px 8px;
+    font-size: 1.1em;
+    width: 14%;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    left: 80%;
   }
 
   #bouton_recherche:before {
     font-family: "Font Awesome 5 free";
     font-weight: 900;
     content: "\f002";
-    padding: 10px;
+  }
+
+  #filtres p {
+    width: 100%;
+  }
+
+  #boutons_de_filtre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #filtres button {
+    display: block;
   }
 
   #resultats {
@@ -550,25 +687,25 @@ footer {
   }
 
   #populaires a {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: 90%;
   }
 
   .hebergement_populaire {
-    height: 400px;
-    padding-left: 10px;
-    border-radius: 50px;
+    height: 130px;
+    padding-left: 4px;
+    border-radius: 15px;
   }
 
   .div_image_populaire {
-    width: 40%;
+    width: 35%;
   }
 
   .image_populaire {
     width: 100%;
     height: 100%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     object-fit: cover;
   }
 
@@ -578,18 +715,18 @@ footer {
 
   .description_populaire p {
     font-size: 0.9em;
-    margin-top: 30px;
+    margin-top: 5px;
   }
 
   #hebergement {
     width: 100%;
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
     background-color: white;
     padding: 0;
   }
 
   #hebergement h1 {
-    margin-left: 45px;
+    margin-left: 20px;
   }
 
   #selection_hebergements {
@@ -599,18 +736,18 @@ footer {
 
   .lien_hebergement_mis_en_avant {
     width: 90%;
-    height: 500px;
-    margin-bottom: 60px;
+    height: 200px;
+    margin-bottom: 20px;
   }
 
   .hebergement_mis_en_avant {
-    border-radius: 50px;
+    border-radius: 20px;
   }
 
   .hebergement_mis_en_avant img {
     height: 65%;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
 
   .description_hebergement_recherche {
@@ -628,7 +765,8 @@ footer {
   }
 
   .afficher_plus {
-    margin-left: 45px;
+    margin: 15px 0 0 20px;
+    font-size: 1em;
   }
 
   #activités {
@@ -638,7 +776,7 @@ footer {
   }
 
   #activités h1 {
-    margin-left: 45px;
+    margin-left: 20px;
   }
 
   #activités_touristiques {
@@ -648,28 +786,27 @@ footer {
 
   .lien_activite_unique {
     width: 90%;
-    height: 500px;
+    height: 175px;
     margin-bottom: 30px;
-    
   }
 
   .activité_unique {
-    border-radius: 50px;
+    border-radius: 20px;
   }
 
   .container_image_activite_unique {
     height: 70%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .image_activite_unique {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .description_activite_unique {
-    margin-left: 30px;
+    margin-left: 5px;
     height: 30%;
   }
 
@@ -681,35 +818,32 @@ footer {
   .lien_activite_45_colonne,
   .lien_activite_50_colonne {
     width: 100%;
-    height: 500px;
+    height: 175px;
     margin-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
   }
 
   .colonne_deux_activites img {
     height: 70%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .lien_activite_40_colonne p,
   .lien_activite_45_colonne p,
   .lien_activite_50_colonne p {
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   footer {
     flex-direction: column;
-    padding: 50px;
+    padding: 25px;
   }
 
   .colonne_pied_page ul {
-    margin-top: 10px;
+    margin-top: 2px;
   }
 
   .colonne_pied_page li {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
-
-  
-  
 }

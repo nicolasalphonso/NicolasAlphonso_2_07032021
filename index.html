@@ -2,6 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réservia vous aide à trouver un hébergement pour des vacances de rêve."
+    />
     <title>Reservia : Trouvez un hébergement pour des vacances de rêve</title>
     <link rel="stylesheet" href="style.css" />
     <script
@@ -12,16 +17,21 @@
 
   <body>
     <header>
-        <img src="images/logo/Reservia.svg" alt="logo de Reservia" id="div_logo" />
+      <a href="" id="div_logo"
+        ><img
+          src="images/logo/Reservia.svg"
+          alt="logo de Reservia"
+          id="img_logo"
+      /></a>
       <nav>
         <ul>
           <li><a href="#hebergement" class="active">Hébergements</a></li>
           <li><a href="#activités">Activités</a></li>
-          <li><a href="" class="lien_inscription">S'inscrire</a></li>
         </ul>
       </nav>
+      <p><a href="" class="lien_inscription">S'inscrire</a></p>
     </header>
-<!---->
+
     <main>
       <section id="recherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -45,29 +55,31 @@
 
         <div id="filtres">
           <p>Filtres</p>
-
-          <button id="bouton_economique">
-            <i class="circle-icon fas fa-money-bill-wave"></i>
-            Économique
-          </button>
-          <button>
-            <i class="fas fa-child circle-icon"></i>
-            Familial
-          </button>
-          <button>
-            <i class="fas fa-heart circle-icon"></i>
-            Romantique
-          </button>
-          <button>
-            <i class="fas fa-dog circle-icon"></i>
-            Animaux autorisés
-          </button>
+          <div id="boutons_de_filtres">
+            <a href="">
+              <!--<span class="icone_texte_filtre">-->
+                <i class="fas fa-money-bill-wave fa-fw circle-icon"></i>
+                Économique
+              <!--</span>-->
+            </a>
+            <a href="">
+              <i class="fas fa-child fa-fw circle-icon"></i>
+              Familial
+            </a>
+            <a href="">
+              <i class="fas fa-heart fa-fw circle-icon"></i>
+              Romantique
+            </a>
+            <a href="">
+              <i class="fas fa-dog fa-fw circle-icon"></i>
+              Animaux autorisés
+            </a>
+          </div>
         </div>
-
-        <p>
-          <i class="fas fa-info" id="icone_information"></i> Plus de 500
-          logements sont disponibles dans cette ville
-        </p>
+        <div id="informations_complementaires">
+          <i class="fas fa-info" id="icone_information"></i>
+        <span id="descriptif_info_complementaire">Plus de 500 logements sont disponibles dans cette ville</span>
+      </div>
       </section>
 
       <section id="resultats">
