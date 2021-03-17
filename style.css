@@ -167,9 +167,7 @@ form i {
   margin-bottom: 15px;
 }
 
-.icone_texte_filtre {
-  display: inline-block;
-}
+
 
 #boutons_de_filtres i {
   color: #0065fc;
@@ -178,10 +176,6 @@ form i {
   background-color: #deebff;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.icon-background {
-  color: #c0ffc0;
 }
 
 #icone_information {
@@ -657,7 +651,7 @@ footer {
   }
 
   #activités {
-    height:350px;
+    height: 350px;
   }
 
   #activités p {
@@ -673,7 +667,6 @@ footer {
     width: 100%;
     font-size: 1em;
   }
-
 
   #recherche {
     width: 90%;
@@ -723,15 +716,6 @@ footer {
     width: 100%;
   }
 
-  #boutons_de_filtre {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #filtres button {
-    display: block;
-  }
-
   #resultats {
     width: 100%;
   }
@@ -750,7 +734,7 @@ footer {
   }
 
   #populaires a {
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     width: 90%;
   }
 
@@ -843,6 +827,10 @@ footer {
 
   #activités h1 {
     margin-left: 20px;
+  }
+
+  #activités p {
+    font-size: 1em;
   }
 
   #activités_touristiques {
