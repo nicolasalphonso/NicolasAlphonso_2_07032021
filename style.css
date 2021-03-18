@@ -7,7 +7,7 @@ body {
   max-width: 1440px;
   margin: auto;
 }
-h1 {
+h1, h2 {
   font-size: 1.4em;
 }
 p {
@@ -72,7 +72,7 @@ nav a:hover {
   width: 97%;
   margin: auto;
 }
-#recherche h1 {
+#recherche h2 {
   margin-bottom: 0.3em;
 }
 #recherche p {
@@ -183,11 +183,11 @@ form i {
   border-radius: 15px;
   height: 100%;
 }
-#hebergement h1 {
+#hebergement h2 {
   margin-left: 12px;
   margin-top: 30px;
 }
-#hebergement h2 {
+#hebergement h3 {
   font-size: 0.8em;
 }
 #selection_hebergements {
@@ -227,7 +227,7 @@ form i {
   display: flex;
   flex-direction: column;
 }
-.description_hebergement_recherche h2 {
+.description_hebergement_recherche h3 {
   margin-top: 5px;
   margin-bottom: 0px;
 }
@@ -307,7 +307,7 @@ form i {
   height: 80%;
   margin-left: 10px;
 }
-.description_populaire h2 {
+.description_populaire h3 {
   margin: 0px;
   font-size: 00.8em;
 }
@@ -530,7 +530,7 @@ footer {
   .hebergement_populaire {
     height: 130px;
   }
-  #populaires h1 {
+  #populaires h2 {
     padding-left: 15px;
   }
   #hebergement {
@@ -632,7 +632,7 @@ footer {
     border-bottom-left-radius: 15px;
     object-fit: cover;
   }
-  .description_populaire h2 {
+  .description_populaire h3 {
     font-size: 1em;
   }
   .description_populaire p {
@@ -646,7 +646,7 @@ footer {
     padding: 0;
     height: auto;
   }
-  #hebergement h1 {
+  #hebergement h2 {
     margin-left: 20px;
   }
   #selection_hebergements {
@@ -672,7 +672,7 @@ footer {
     height: 35%;
     justify-content: space-between;
   }
-  #hebergement h2 {
+  #hebergement h3 {
     font-size: 1em;
   }
   #hebergement p {
@@ -688,7 +688,7 @@ footer {
     height: auto;
     margin-top: 60px;
   }
-  #activités h1 {
+  #activités h2 {
     margin-left: 20px;
   }
   #activités p {
