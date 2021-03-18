@@ -135,6 +135,17 @@ form i {
   margin-right: 15px;
   margin-bottom: 15px;
 }
+#boutons_de_filtres a:hover {
+  background-color: #deebff;
+}
+#boutons_de_filtres a:hover i{
+  color: black;
+  -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 #boutons_de_filtres i {
   color: #0065fc;
   width: 15px;
