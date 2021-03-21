@@ -58,9 +58,6 @@ nav a {
 nav a:hover {
   text-decoration: none;
   color: #0065fc;
-}
-.active {
-  color: #0065fc;
   border-top: 2px solid#0065fc;
 }
 .lien_inscription {
@@ -199,7 +196,7 @@ form i {
   margin-top: 30px;
 }
 #hebergement h3 {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 #selection_hebergements {
   display: flex;
@@ -210,7 +207,7 @@ form i {
 }
 .lien_hebergement_mis_en_avant {
   width: 30%;
-  height: 40%;
+  height: 42%;
   text-decoration: none;
   color: black;
 }
@@ -243,6 +240,7 @@ form i {
   margin-bottom: 0px;
 }
 .description_hebergement_recherche p {
+  font-size: 0.8em;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -320,7 +318,7 @@ form i {
 }
 .description_populaire h3 {
   margin: 0px;
-  font-size: 00.8em;
+  font-size: 1em;
 }
 .description_populaire p {
   margin-top: 3px;
@@ -516,9 +514,9 @@ footer {
     padding: 20px 10px 10px 10px;
     border-bottom: 3px solid #f2f2f2;
   }
-  .active {
-    border-top: 2px solid transparent;
+  nav a:hover {
     border-bottom: 3px solid #0065fc;
+    border-top: 2px solid transparent;
   }
   #resultats {
     flex-direction: column-reverse;
@@ -674,17 +672,18 @@ footer {
     border-radius: 20px;
   }
   .hebergement_mis_en_avant img {
-    height: 65%;
+    height: 60%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
   .description_hebergement_recherche {
     padding: 0.7em;
-    height: 35%;
+    height: 40%;
     justify-content: space-between;
   }
   #hebergement h3 {
     font-size: 1em;
+    margin-top: 0;
   }
   #hebergement p {
     font-size: 0.9em;
