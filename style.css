@@ -395,12 +395,11 @@ form i {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 80%;
+  height: 75%;
   object-fit: cover;
 }
 .lien_activite_50_colonne p {
   padding: 0 0 0 15px;
-  margin-top: 10px;
 }
 .lien_activite_40_colonne {
   width: 100%;
@@ -419,12 +418,11 @@ form i {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 75%;
+  height: 65%;
   object-fit: cover;
 }
 .lien_activite_40_colonne p {
   padding: 0 0 0 15px;
-  margin-top: 10px;
 }
 .lien_activite_45_colonne {
   width: 100%;
@@ -443,12 +441,11 @@ form i {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 78%;
+  height: 70%;
   object-fit: cover;
 }
 .lien_activite_45_colonne p {
   padding: 0 0 0 15px;
-  margin-top: 10px;
 }
 footer {
   display: flex;
