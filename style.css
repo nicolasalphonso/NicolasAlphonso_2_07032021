@@ -102,7 +102,7 @@ form i {
   border-radius: 0 8px 8px 0;
   padding: 0 20px 0 20px;
 }
-#bouton_recherche:before {
+#bouton_recherche::before {
   content: "Rechercher";
 }
 #filtres {
@@ -542,6 +542,9 @@ footer {
   #populaires h2 {
     padding-left: 15px;
   }
+  .description_populaire h3 {
+    font-size: 0.8em;
+  }
   #hebergement {
     width: 100%;
     height: 500px;
@@ -600,7 +603,7 @@ footer {
     position: absolute;
     left: 80%;
   }
-  #bouton_recherche:before {
+  #bouton_recherche::before {
     font-family: "Font Awesome 5 free";
     font-weight: 900;
     content: "\f002";
@@ -619,7 +622,7 @@ footer {
     height: auto;
     margin: 0;
     border-radius: 0 0 0 0;
-    padding: 0%;
+    padding: 30px 0;
     align-items: center;
   }
   #populaires a {
